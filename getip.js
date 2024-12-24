@@ -16,3 +16,7 @@ fetch('https://api.vore.top/api/IPdata')
         document.getElementById('welcome').textContent = welcomeMessage;
     })
     .catch(error => console.error(error));
+    window.onload = function() {
+        document.getElementById("welcome").style.color = "#ff96b9";
+    };
+    
