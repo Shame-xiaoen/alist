@@ -9,9 +9,9 @@ fetch('https://api.vore.top/api/IPdata')
         const nation = data.ipdata.info1;
         let welcomeMessage;
         if (area_code) {
-            welcomeMessage = `欢迎${province}${city}${isp} (IP: ${ip}) 的小伙伴访问本站`;
+            welcomeMessage = `欢迎${province}${city}${isp}的小伙伴访问本站 (IPV4: ${ip}) `;
         } else {
-            welcomeMessage = `欢迎${nation}${isp} (IP: ${ip}) 的小伙伴访问本站`;
+            welcomeMessage = `欢迎${nation}${isp}的小伙伴访问本站 (IPV4: ${ip}) `;
         }
         document.getElementById('welcome').textContent = welcomeMessage;
     })
